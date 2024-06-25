@@ -416,6 +416,11 @@ on property:sys.usb.config=rndis,diag && property:sys.usb.configfs=1
 
 on property:sys.usb.config=rndis,diag,adb && property:sys.usb.configfs=1
     start adbd
+    
+on property:vendor.audio.usb_cctoggle=1
+    write /sys/class/qcom-battery/screen_cctog 1
+on property:vendor.audio.usb_cctoggle=0
+    write /sys/class/qcom-battery/screen_cctog 0
 
 on property:vendor.audio.usb_cctoggle=1
     write /sys/class/qcom-battery/screen_cctog 1
