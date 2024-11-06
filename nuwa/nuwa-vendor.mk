@@ -631,10 +631,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/nuwa/proprietary/odm/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-tgame.conf \
     vendor/xiaomi/nuwa/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
     vendor/xiaomi/nuwa/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
-    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_0.bin \
-    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_2.bin \
-    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_3.bin \
-    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_4.bin \
+    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/0_click_P_RTP.bin \
+    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/2_tick_P_RTP.bin \
+    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/3_thud_P_RTP.bin \
+    vendor/xiaomi/nuwa/proprietary/vendor/firmware/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/4_pop_P_RTP.bin \
     vendor/xiaomi/nuwa/proprietary/odm/firmware/B-cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_ODM)/firmware/B-cs35l41-dsp1-spk-cali.bin \
     vendor/xiaomi/nuwa/proprietary/odm/firmware/B-cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_ODM)/firmware/B-cs35l41-dsp1-spk-prot.bin \
     vendor/xiaomi/nuwa/proprietary/odm/firmware/B-handfree.txt:$(TARGET_COPY_OUT_ODM)/firmware/B-handfree.txt \
