@@ -1204,7 +1204,7 @@
                 <max_velocity_end>24</max_velocity_end>
                 <factor>1.0</factor>
             </slow_factor>
-        </trigger>    
+        </trigger>
     </cameraId>
    <cameraId>
         <id>3</id>
@@ -1767,6 +1767,6 @@
                 <max_velocity_end>24</max_velocity_end>
                 <factor>1.0</factor>
             </slow_factor>
-        </trigger>    
+        </trigger>
     </cameraId>
 </motion_modify_exptime>
