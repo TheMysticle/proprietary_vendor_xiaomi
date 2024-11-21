@@ -1801,6 +1801,7 @@ PRODUCT_PACKAGES += \
     libagmdevice \
     CACertService \
     CneApp \
+    EuiccGoogle \
     IWlanService \
     TimeService \
     TrustZoneAccessService \
