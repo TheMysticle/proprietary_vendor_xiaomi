@@ -144,6 +144,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/evass.mbn:$(TARGET_COPY_OUT_ODM)/firmware/evass.mbn \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/evass.mdt:$(TARGET_COPY_OUT_ODM)/firmware/evass.mdt \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu30_4v.mbn \
+		vendor/xiaomi/sm8550-common/proprietary/odm/firmware/st_fts_m2.ftb:$(TARGET_COPY_OUT_ODM)/firmware/st_fts_m2.ftb \
+		vendor/xiaomi/sm8550-common/proprietary/odm/firmware/stm_fts_production_limits.csv:$(TARGET_COPY_OUT_ODM)/firmware/stm_fts_production_limits.csv \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib/libaudioroute_ext.so:$(TARGET_COPY_OUT_ODM)/lib/libaudioroute_ext.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib/libcrussp.so:$(TARGET_COPY_OUT_ODM)/lib/libcrussp.so \
     vendor/xiaomi/sm8550-common/proprietary/odm/lib64/hw/consumerir.qcom.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/consumerir.qcom.so \
