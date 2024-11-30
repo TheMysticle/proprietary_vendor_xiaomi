@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8550-common
 
 PRODUCT_COPY_FILES += \
+		vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libswspatializer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswspatializer_ext.so \
 		vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
@@ -1785,6 +1787,8 @@ PRODUCT_PACKAGES += \
     memtrack_qti \
     qcrilhook-saidl \
     qms-saidl \
+    qdcmss \
+		ubwcconvert \
     qtiradio-saidl \
     vendor.dolby.hardware.dms \
     vendor.qti.diag.hal.service \

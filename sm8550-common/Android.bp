@@ -30,6 +30,40 @@ cc_prebuilt_binary {
 	soc_specific: true,
 }
 
+cc_prebuilt_binary {
+	name: "ubwcconvert",
+	owner: "xiaomi",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/ubwcconvert"],
+			shared_libs: ["libEGL", "libnativewindow", "libGLESv3", "libui", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "qdcmss",
+	owner: "xiaomi",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/qdcmss"],
+			shared_libs: ["libcutils", "libutils", "libqservice", "libsdmutils", "libbinder", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libvui_dmgr",
 	owner: "xiaomi",
