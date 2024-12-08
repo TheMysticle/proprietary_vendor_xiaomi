@@ -742,10 +742,6 @@
                         "com.tencent.mm"]
         },
         {
-            "ApkFunctionType":"ForVideoLiveReduceFPS",
-            "ApkTable" :[""]
-        },
-        {
             "ApkFunctionType":"DisablePrivatePort",
             "ApkTable" :["com.instagram.android"]
         },
