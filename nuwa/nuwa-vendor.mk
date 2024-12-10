@@ -1121,4 +1121,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.camera.aon-impl-1.3 \
     vendor.qti.camera.postproc-impl \
+    aon_front_aon_front_symlink64 \
     vendor.qti.camera.provider

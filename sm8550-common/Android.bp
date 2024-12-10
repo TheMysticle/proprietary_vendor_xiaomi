@@ -1952,13 +1952,6 @@ prebuilt_etc_xml {
 }
 
 install_symlink {
-	name: "aon_front_aon_front_symlink64",
-	soc_specific: true,
-	installed_location: "lib64/camera/aon_front.pb",
-	symlink_target: "/odm/lib64/camera/aon_front.pb",
-}
-
-install_symlink {
 	name: "libimscamera_jni_libimscamera_jni_symlink64",
 	system_ext_specific: true,
 	installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
