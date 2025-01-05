@@ -94,167 +94,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.displayfeature@1.0_vendor",
-	stem: "vendor.xiaomi.hardware.displayfeature@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "displayfeature.default",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/hw/displayfeature.default.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbinder", "libxml2", "libdrm", "libstagefright_foundation-v33", "libhidltransport", "libhidlbase", "android.frameworks.sensorservice@1.0", "libtinyxml2", "libhardware", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.common@1.2", "libmiSensorCtrl", "libtruetone", "libvideomode", "libpaperMode", "libmiBrightness", "libcolortempmode", "libflatmode", "libmi_dspp", "libMiDispDevManager", "libsdr2hdr", "libsre", "libdither", "libhdrmode", "libhistprocess", "libdisplaylog", "librhytheyecare", "libdisplaycount", "libqservice", "libsdm-disp-vndapis_sm8550", "libgrallocutils", "libqdMetaData", "vendor.qti.hardware.display.mapper@3.0", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapperextensions@1.0", "libmi-stc-HW-modulate", "libdisplayconfig.qti", "libfpsmonitor", "libmiXmlParser", "libgui_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "displayfeature",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/displayfeature"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbinder", "libdisplayfeatureservice", "libgui_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdisplayfeatureservice",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdisplayfeatureservice.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbinder", "libdisplayfeature", "libhidltransport", "libhidlbase", "libgui_vendor", "vendor.xiaomi.hardware.displayfeature@1.0_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.qti.hardware.display.composer-service_sm8550",
-	stem: "vendor.qti.hardware.display.composer-service",
-	overrides: ["vendor.qti.hardware.display.composer-service"],
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service"],
-			shared_libs: ["libhidltransport", "vendor.xiaomi.hardware.displayfeature@1.0_vendor", "libclient2slpi.notifier", "libbinder", "libhardware", "libhistogram", "libutils", "libcutils", "libsync", "libhidlbase", "liblog", "libfmq", "libhardware_legacy", "libsdmcore", "libqservice", "libdisplaydebug", "libsdmutils", "libui", "libgpu_tonemapper", "libEGL", "libGLESv2", "libGLESv3", "vendor.qti.hardware.display.composer@3.0", "vendor.qti.hardware.display.composer@3.1", "android.hardware.graphics.composer@2.1", "android.hardware.graphics.composer@2.2", "android.hardware.graphics.composer@2.3", "android.hardware.graphics.composer@2.4", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "libgralloc.qti", "libgralloctypes", "libdisplayconfig.qti", "libdrm", "libbinder_ndk", "android.hardware.common-V2-ndk", "vendor.qti.hardware.display.config-V4-ndk", "vendor.qti.hardware.display.demura@2.0", "vendor.qti.hardware.display.mapperextensions@1.1", "vendor.qti.hardware.display.mapperextensions@1.2", "vendor.qti.hardware.display.mapperextensions@1.3", "libgrallocutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.display.composer-service.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.displayfeature@1.0-service.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.xiaomi.hardware.displayfeature@1.0-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libbinder", "libhardware", "libhidlbase", "libhidltransport", "vendor.xiaomi.hardware.displayfeature@1.0_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.displayfeature@1.0-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so"],
-			shared_libs: ["libhidlbase", "libhidltransport", "libutils", "liblog", "libcutils", "libhardware", "libbase", "libbinder", "vendor.xiaomi.hardware.displayfeature@1.0_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdisplayfeature",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdisplayfeature.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbinder", "libgui_vendor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmisight",
 	owner: "xiaomi",
 	strip: {
@@ -2079,6 +1918,15 @@ prebuilt_etc_xml {
 	name: "vendor.qti.memory.pasrmanager-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.displayfeature@1.0-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
