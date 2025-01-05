@@ -573,7 +573,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/mixer_paths_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_qrd.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_cdp.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio_cloud_control_white_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_cloud_control_white_list.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
@@ -796,7 +795,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
