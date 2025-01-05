@@ -496,7 +496,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qcc-trd:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-trd \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
     vendor/xiaomi/sm8550-common/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
@@ -672,7 +671,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
@@ -788,7 +786,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/modemManager.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/modemManager.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
@@ -870,8 +867,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libmisight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmisight.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libmisoundsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmisoundsa.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libmispowerop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmispowerop.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk2_0.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk_manager.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigefar.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libresampler.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspatializerparamstorage.so \
@@ -1262,8 +1257,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqdpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdpr.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk2_0.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqesdk_manager.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
@@ -1585,12 +1578,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.1.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.latency@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.2.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager-V1-ndk.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.0.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdhal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.1.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdhal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.2.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdhal@1.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.3-impl.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdhal@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhal@1.3.so \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V3-ndk.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal-V1-ndk.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal-impl.so \
     vendor/xiaomi/sm8550-common/proprietary/vendor/lib64/vendor.qti.sla.service@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.sla.service@1.0-impl.so \
