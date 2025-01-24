@@ -6,6 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/nuwa
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/nuwa/proprietary/odm/lib64/libtensorflowlite_c.so:$(TARGET_COPY_OUT_ODM)/lib64/libtensorflowlite_c.so \
+    vendor/xiaomi/nuwa/proprietary/odm/firmware/water_check.tflite:$(TARGET_COPY_OUT_ODM)/firmware/water_check.tflite \
+		vendor/xiaomi/nuwa/proprietary/odm/firmware/film_model.tflite:$(TARGET_COPY_OUT_ODM)/firmware/film_model.tflite \
+		vendor/xiaomi/nuwa/proprietary/odm/firmware/glove_model.tflite:$(TARGET_COPY_OUT_ODM)/firmware/glove_model.tflite \
+		vendor/xiaomi/nuwa/proprietary/odm/bin/touch_raw:$(TARGET_COPY_OUT_ODM)/bin/touch_raw \
+		vendor/xiaomi/nuwa/proprietary/odm/bin/touch_report:$(TARGET_COPY_OUT_ODM)/bin/touch_report \
+		vendor/xiaomi/nuwa/proprietary/odm/bin/toucheventcheck:$(TARGET_COPY_OUT_ODM)/bin/toucheventcheck \
+		vendor/xiaomi/nuwa/proprietary/odm/bin/touchsensor:$(TARGET_COPY_OUT_ODM)/bin/touchsensor \
     vendor/xiaomi/nuwa/proprietary/odm/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.camera.provider-service_64 \
     vendor/xiaomi/nuwa/proprietary/odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Forte/Forte_acdb_cal.acdb \
     vendor/xiaomi/nuwa/proprietary/odm/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp \
