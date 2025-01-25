@@ -838,6 +838,13 @@ dex_import {
 }
 
 dex_import {
+	name: "uimlpalibrary",
+	owner: "xiaomi",
+	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "uimgbamanagerlibrary",
 	owner: "xiaomi",
 	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],

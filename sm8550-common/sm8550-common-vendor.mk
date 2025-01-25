@@ -1797,6 +1797,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature@1.0_vendor \
     vendor.xiaomi.hw.touchfeature@1.0-impl \
     libmisight \
+		uimlpalibrary \
     vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor.xiaomi.sensor.communicate@1.0_manifest
 
